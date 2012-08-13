@@ -1,5 +1,10 @@
 package xattr
 
+func IsXattrExists(path, name string) bool {
+    _, err := getxattr(path, name, nil, 0, 0, 0)
+    return err == nil
+}
+
 // Retrieve extended attribute data associated with path.
 func Getxattr(path, name string) ([]byte, error) {
 	// find size.
