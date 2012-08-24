@@ -71,7 +71,7 @@ func Removexattr(path, name string) error {
     }
     return nil
 }
-
+/*
 // Strip off "user." prefixes from attribute names.
 func stripUserPrefix(s []string) []string {
     for i, a := range s {
@@ -80,4 +80,4 @@ func stripUserPrefix(s []string) []string {
         }
     }
     return s
-}
+}*/
